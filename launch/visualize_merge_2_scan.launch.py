@@ -50,7 +50,8 @@ def generate_launch_description():
             name='pointcloud_to_laserscan',
             package='pointcloud_to_laserscan',
             executable='pointcloud_to_laserscan_node',
-            parameters=[config]
+            parameters=[config],
+            remappings=[('/scan', '/summit/merged_laser_scan'),],
         ),
         launch_ros.actions.Node(
             package='rviz2',
