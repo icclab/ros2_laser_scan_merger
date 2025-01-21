@@ -1,4 +1,4 @@
-/ros2_laser_scan_merger:
+ros2_laser_scan_merger:
   ros__parameters:
     flip1: false
     flip2: false
@@ -28,13 +28,13 @@
     # qos_overrides./parameter_events.publisher.durability: volatile
     # qos_overrides./parameter_events.publisher.history: keep_last
     qos_overrides./parameter_events.publisher.reliability: best_effort
-    scanTopic1: /summit/front_laser/scan
-    scanTopic2: /summit/rear_laser/scan
+    scanTopic1: front_laser/scan
+    scanTopic2: rear_laser/scan
     show1: true
     show2: true
     use_sim_time: false
 
-/pointcloud_to_laserscan:
+pointcloud_to_laserscan:
   ros__parameters:
     angle_increment: 0.004363323096185923
     # angle_max: 1.5708
