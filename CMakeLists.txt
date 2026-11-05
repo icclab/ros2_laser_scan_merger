@@ -25,7 +25,6 @@ find_package(rcl_interfaces REQUIRED)
 find_package(rcutils REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(Boost REQUIRED COMPONENTS system)
 find_package(PCL REQUIRED)
 
 include_directories(
